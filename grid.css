@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #00AA;
+}
+
+
+.grid-main {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  
+    grid-template-areas:
+    
+      "chiffres calculs";
+  
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 400px;
+    gap: 0px;
+  }
+  
+
+.grid-chiffres {
+  grid-area: chiffres;
+}
+
+.grid-chiffres {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+}
+
+
+.grid-calculs {
+    grid-area: calculs;
+  }
+  
+  .grid-calculs {
+
+      display: grid;
+    
+  }
+  
+
+.item{
+    height: 100px;
+    outline: none;
+    border: 0px solid;
+}
+
+.item1{
+grid-column: 1/span 2;
+background-color: whitesmoke;
+
+}
+
+
+
+.grid-main div {
+  /* display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;*/
+  
+  cursor: pointer;
+  font-size: 3rem;
+  border: 0 px solid white;
+  outline: none;
+  background-color: rgba(0, 0, 0, .75);
+}
